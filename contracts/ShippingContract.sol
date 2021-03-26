@@ -10,9 +10,9 @@ contract ShippingContract {
     Etat choix;
 
     //On crée les evenements possible pour nos commandes
-    event Create(uint id, Etat);
-    event Shipped(uint id, Etat);
-    event Delivered(uint id, Etat);
+    event Create(uint id, Etat); //Evenement "création de commande"
+    event Shipped(uint id, Etat); //Evenement "livraison en cours"
+    event Delivered(uint id, Etat); //Evenement "Commande délivrée"
     //On crée la structure Ship qui correspond à un objet "commande". On créera cet objet a chaque élément acheté.
     struct Ship{
         uint id;
